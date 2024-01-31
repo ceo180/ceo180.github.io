@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alien Abduction Order Form</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link href="css/forms.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section>
+        <form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="post">
+		  <input type="hidden" name="send_to" value="oshikeec@gmail.com">
+          <p class="head">Alien Abduction Order Form</p>
+          <p>
+            Fill out the form below to place an order for an alien abduction by
+            one of our fine UFOs.
+          </p>
+
+          <fieldset>
+            <legend>Your contact information</legend>
+            <label for="name">Name </label>
+            	<input type="text" id="name" name="name" />
+            <label for="phone">Phone number</label>
+            	<input type="tel" id="phone" name="phone" />
+            <label for="email">Email</label>
+            	<input type="email" id="email" name="email" />
+          </fieldset>
+          <fieldset>
+            <legend>About your abduction</legend>
+            <label for="date">Requested date</label>
+            	<input type="date" id="date" name="date" />
+            <label for="qty">How many people would you like abducted?</label>
+            	<input type="number" id="qty" name="qty" min="1" max="15" />
+            <p>What type of UFO do you prefer?</p>
+            <label>
+              <input type="radio" name="ufotype" value="classic" />Classic oval UFO
+            </label>
+            <label for="">
+              <input type="radio" name="ufotype" value="star" />Star Wars-style Imperial cruiser
+            </label>
+            <label for="">
+              <input type="radio" name="ufotype" value="battlestar" />Battlestar Galactica-style Viper
+            </label>
+			<label>
+              <input type="radio" name="ufotype" value="borg" />Borg-style cube
+            </label>
+            <label for="abtype">What type of abduction experience do you want?</label>
+            <select id="abtype" name="abtype">
+              <option selected>select one...</option>
+              <option>Tour of the solar system</option>
+              <option>Alien dinner and discussion</option>
+              <option>Alien dance lessons</option>
+              <option>Whale watching</option>
+            </select>
+			 <label for="comments">Special requests:</label>
+		  		<textarea id="comments" name="comments" placeholder="write your story.."></textarea>
+          	<label>
+				<input type="checkbox"  name="subscribe" checked>Add me to your email list
+		 	 </label>
+          </fieldset>
+		  <button type="submit">Choose your destiny</button>
+		</form>
+      </section>
+      <aside>
+        <h3>Our Location</h3>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1083.0049707997302!2d5.620393631051122!3d6.39698849337335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10472cc1bf8c603d%3A0x16ff1927473ff231!2sHall%203%20UNIBEN%20Hostel!5e1!3m2!1sen!2sng!4v1705882643851!5m2!1sen!2sng" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <address>
+          Frontend Masters &middot; 60 South 6th Street &middot; Suite 3625
+          &middot; Minneapolis, MN 55402
+        </address>
+      </aside>
+    </div>
+	<script src="js/forms.js"></script>
+  </body>
+</html>
